@@ -1,0 +1,13 @@
+{
+  "name": "cozypowers",
+  "owner": {
+    "name": "Cozybara"
+  },
+  "plugins": [
+    {
+      "name": "cozypowers",
+      "source": "./",
+      "description": "A lean, solo-developer software methodology for Claude Code: brainstorm before building, plan in small bites, test-drive the logic, debug by root cause, and ship with a clean conscience. No hooks, no scripts, no telemetry."
+    }
+  ]
+}

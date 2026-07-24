@@ -1,0 +1,83 @@
+# cozypowers
+
+*Code, but cozy.* A lean software-development methodology for Claude Code, sized for a solo developer. Inspired by the workflow popularized by the Superpowers plugin, but written from scratch as a clean-room recreation you can audit in one sitting.
+
+## Why this exists
+
+Third-party plugins can ship session hooks, shell scripts, and telemetry that execute on your machine. This plugin ships **none of that**:
+
+- **Zero executable code.** No hooks, no scripts, no binaries. Every file is markdown or one small JSON manifest.
+- **Zero network calls.** Nothing phones home, ever.
+- **Zero dependencies.** Nothing is downloaded at install or run time.
+- **Auditable in minutes.** Six skills, five commands, one manifest. Read it all before installing - please do.
+
+## What's inside
+
+The workflow, end to end:
+
+| Stage | Skill | Slash command |
+|---|---|---|
+| 1. Refine the idea | `brainstorming` | `/brainstorm` |
+| 2. Break it into tasks | `writing-plans` | `/plan` |
+| 3. Do the work | `executing-plans` | `/execute` |
+| (while implementing) | `test-driven-development` | - |
+| (when things break) | `systematic-debugging` | `/debug` |
+| 4. Land it | `shipping` | `/ship` |
+
+Design principles baked in: designs approved before code, plans in 2-15 minute tasks that each end green and committed, RED-GREEN-REFACTOR with the watch-it-fail rule, root cause before fixes, evidence before completion claims, and checkpoints so work is resumable across short solo-dev sessions.
+
+Deliberately **not** included from the original inspiration: subagent-driven development with parallel agent dispatch and two-stage review, git-worktree parallelism, and the meta skill-authoring system. Those earn their keep on teams running long autonomous sessions; for one developer they are mostly ceremony. Add them later if you feel the absence.
+
+## Installation
+
+### Option A - local plugin (simplest, fully offline)
+
+Copy this folder into your Claude Code plugins directory:
+
+```bash
+cp -r cozypowers ~/.claude/plugins/cozypowers
+```
+
+Restart Claude Code. Verify with `/plugin` - cozypowers should be listed.
+
+### Option B - your own private marketplace (survives machine moves)
+
+1. Push this folder to a GitHub repo (e.g. [`jCortuna/cozypowers`](https://github.com/jCortuna/cozypowers)).
+2. Add a `marketplace.json` per Claude Code's plugin marketplace docs, or install directly:
+
+```
+/plugin marketplace add jCortuna/cozypowers
+/plugin install cozypowers@cozypowers
+```
+
+Because you own the repo, updates only happen when *you* push them.
+
+## Recommended: the CLAUDE.md nudge
+
+The original inspiration uses a session-start hook (executable code) to make the agent aware of its skills. We skip the hook on principle. The zero-code equivalent: paste this into your project's `CLAUDE.md`:
+
+```markdown
+## Development methodology
+
+This project follows the cozypowers workflow. Before any feature work, bug fix,
+or behavior change, check the cozypowers skills and use the one that fits:
+brainstorming before new code, writing-plans before multi-file work,
+test-driven-development for all logic, systematic-debugging for any bug,
+shipping before declaring anything done. These are mandatory workflows,
+not suggestions.
+```
+
+Skills also trigger on their own descriptions, and the slash commands invoke them explicitly - the snippet just raises the hit rate at session start.
+
+## Auditing this plugin
+
+```bash
+find cozypowers -type f            # expect: 1 json, 11 markdown files
+grep -rn "http" cozypowers          # expect: nothing executable, no URLs fetched
+```
+
+If a future version of this plugin ever contains a `hooks/` or `scripts/` directory, that version was not written under these principles - read it before trusting it.
+
+## License
+
+MIT. Do as you please; a wave to the capybara is appreciated.
