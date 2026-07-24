@@ -30,24 +30,30 @@ Deliberately **not** included from the original inspiration: subagent-driven dev
 
 ## Installation
 
-### Option A - local plugin (simplest, fully offline)
+### Option A - skills-directory plugin (simplest, fully offline)
 
-Copy this folder into your Claude Code plugins directory:
+Copy this folder into your personal skills directory:
 
 ```bash
-cp -r cozypowers ~/.claude/plugins/cozypowers
+cp -r cozypowers ~/.claude/skills/cozypowers
 ```
 
-Restart Claude Code. Verify with `/plugin` - cozypowers should be listed.
+It loads automatically on your next Claude Code session as `cozypowers@skills-dir` - no marketplace, no install step. Verify with `/plugin` or `claude plugin list`.
 
-### Option B - your own private marketplace (survives machine moves)
+### Option B - your own marketplace (survives machine moves, easy updates)
 
-1. Push this folder to a GitHub repo (e.g. [`jCortuna/cozypowers`](https://github.com/jCortuna/cozypowers)).
-2. Add a `marketplace.json` per Claude Code's plugin marketplace docs, or install directly:
+This repo doubles as its own marketplace ([`jCortuna/cozypowers`](https://github.com/jCortuna/cozypowers)):
 
 ```
 /plugin marketplace add jCortuna/cozypowers
 /plugin install cozypowers@cozypowers
+```
+
+or non-interactively:
+
+```bash
+claude plugin marketplace add jCortuna/cozypowers
+claude plugin install cozypowers@cozypowers
 ```
 
 Because you own the repo, updates only happen when *you* push them.
