@@ -6,10 +6,10 @@
 
 Third-party plugins can ship session hooks, shell scripts, and telemetry that execute on your machine. This plugin ships **none of that**:
 
-- **Zero executable code.** No hooks, no scripts, no binaries. Every file is markdown or one small JSON manifest.
+- **Zero executable code.** No hooks, no scripts, no binaries. Every file is markdown or a small JSON manifest.
 - **Zero network calls.** Nothing phones home, ever.
 - **Zero dependencies.** Nothing is downloaded at install or run time.
-- **Auditable in minutes.** Six skills, five commands, one manifest. Read it all before installing - please do.
+- **Auditable in minutes.** Seven skills, six commands, two small manifests. Read it all before installing - please do.
 
 ## What's inside
 
@@ -18,11 +18,14 @@ The workflow, end to end:
 | Stage | Skill | Slash command |
 |---|---|---|
 | 1. Refine the idea | `brainstorming` | `/brainstorm` |
-| 2. Break it into tasks | `writing-plans` | `/plan` |
-| 3. Do the work | `executing-plans` | `/execute` |
+| 2. Shape it into a spec | `shaping-specs` | `/spec` |
+| 3. Break it into tasks | `writing-plans` | `/plan` |
+| 4. Do the work | `executing-plans` | `/execute` |
 | (while implementing) | `test-driven-development` | - |
 | (when things break) | `systematic-debugging` | `/debug` |
-| 4. Land it | `shipping` | `/ship` |
+| 5. Land it | `shipping` | `/ship` |
+
+`shaping-specs` is optional - it earns its keep on features big enough that "what exactly are we building" deserves its own written answer. Small changes can go straight from `/brainstorm` to `/plan`.
 
 Design principles baked in: designs approved before code, plans in 2-15 minute tasks that each end green and committed, RED-GREEN-REFACTOR with the watch-it-fail rule, root cause before fixes, evidence before completion claims, and checkpoints so work is resumable across short solo-dev sessions.
 
@@ -58,6 +61,18 @@ claude plugin install cozypowers@cozypowers
 
 Because you own the repo, updates only happen when *you* push them.
 
+## Shaping specs
+
+Before planning a feature, shape it first:
+
+```
+/spec
+```
+
+This reads any `standards/` and `product/` context in the current project, asks a few scoping questions, and drafts a spec folder under `specs/` for your review. Once approved, hand it to `/plan` - writing-plans will pick up the spec automatically if one exists.
+
+Neither `standards/` nor `product/` is required. Without them, `/spec` and `/plan` behave exactly as before.
+
 ## Recommended: the CLAUDE.md nudge
 
 The original inspiration uses a session-start hook (executable code) to make the agent aware of its skills. We skip the hook on principle. The zero-code equivalent: paste this into your project's `CLAUDE.md`:
@@ -78,7 +93,7 @@ Skills also trigger on their own descriptions, and the slash commands invoke the
 ## Auditing this plugin
 
 ```bash
-find cozypowers -type f            # expect: 1 json, 11 markdown files
+find cozypowers -type f            # expect: 2 json manifests, markdown, LICENSE - nothing else
 grep -rn "http" cozypowers          # expect: nothing executable, no URLs fetched
 ```
 

@@ -7,6 +7,16 @@ description: Turn an approved design into a step-by-step implementation plan wit
 
 Write the plan as if it will be executed by an enthusiastic engineer with no project context, no judgment, and a suspicious attitude toward testing. If the plan only works because the person executing it is clever, it is not a plan - it is a hope. This matters doubly for a solo developer: the "person executing it" is often a future session with none of today's context.
 
+## Before drafting: check for project context
+
+Check the current project for context that should shape the plan:
+
+- `specs/` - if the developer points at a specific feature or spec folder, read its `plan.md` and `shape.md` first. The plan implements that spec; it does not redefine it.
+- `standards/` - read any subfolders relevant to what's being planned.
+- `product/mission.md` - skim for anything that changes scope or priority.
+
+None of these are hard dependencies. If they don't exist, proceed exactly as below.
+
 ## Plan structure
 
 Save plans to `docs/plans/YYYY-MM-DD-<topic>.md`. Use this template:
