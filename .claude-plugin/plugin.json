@@ -1,7 +1,7 @@
 {
   "name": "cozypowers",
   "description": "A lean, solo-developer software methodology for Claude Code. Code, but cozy: brainstorm before building, plan in small bites, test-drive the logic, debug by root cause, and ship with a clean conscience. No hooks, no scripts, no telemetry - pure markdown you can audit in one sitting.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": {
     "name": "Cozybara"
   }
