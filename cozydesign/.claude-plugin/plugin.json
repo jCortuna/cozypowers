@@ -1,0 +1,8 @@
+{
+  "name": "cozydesign",
+  "description": "Design-engineering skills for Claude Code, so generated interfaces stop looking generated: motion, layout, typography, color, accessibility, landing pages, taste memory, and design reviews. Clean-room recreations of popular community design skills. No hooks, no scripts, no telemetry - pure markdown.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Cozybara"
+  }
+}

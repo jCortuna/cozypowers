@@ -1,5 +1,6 @@
 {
   "name": "cozypowers",
+  "description": "Zero-code Claude Code plugins by Cozybara: cozypowers (lean solo-dev methodology) and cozydesign (design-engineering skills).",
   "owner": {
     "name": "Cozybara"
   },
@@ -8,6 +9,11 @@
       "name": "cozypowers",
       "source": "./",
       "description": "A lean, solo-developer software methodology for Claude Code: brainstorm before building, plan in small bites, test-drive the logic, debug by root cause, and ship with a clean conscience. No hooks, no scripts, no telemetry."
+    },
+    {
+      "name": "cozydesign",
+      "source": "./cozydesign",
+      "description": "Design-engineering skills so generated interfaces stop looking generated: motion, layout, typography, color, accessibility, landing pages, taste memory, and evidence-based design reviews. Clean-room recreations of popular community design skills. No hooks, no scripts, no telemetry."
     }
   ]
 }
