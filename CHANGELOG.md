@@ -11,6 +11,11 @@ All notable changes to cozypowers are documented here.
   Clean-room, markdown-only rewrite of the community unlazy skill (MIT); its
   Node scripts and Stop hook are replaced by the agent's own tools and the
   `shipping` gate. See `skills/unlazy/NOTICE.md`.
+- `validating-claims` skill and `/validate-claim` command — score a claim's
+  correctness and completeness (0-100 each, with a verdict) against one named
+  source using only that source. Judging runs in a fresh sub-agent that sees
+  nothing but the claim, the source, and `procedure.md`; every label must carry
+  a verbatim quote and location.
 - `cozydesign` companion plugin (v1.0.0) in the same marketplace: 15 markdown-only design-engineering skills - `design-engineering`, `animate`, `web-design-engineer`, `landing-page-design`, `video-to-superprompt`, `awwwards-quality-sites`, the `better-*` review family, `interface-review`, and `tastemaker`. Clean-room recreations of community design skills; see `cozydesign/CREDITS.md`.
 - Marketplace description in `marketplace.json`.
 - `designing-interfaces` skill and `/design` command — UI/UX design intelligence
