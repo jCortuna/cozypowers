@@ -9,7 +9,7 @@ Third-party plugins can ship session hooks, shell scripts, and telemetry that ex
 - **Zero executable code.** No hooks, no scripts, no binaries. Every file is markdown, inert CSV data, or a small JSON manifest - nothing that can run.
 - **Zero network calls.** Nothing phones home, ever.
 - **Zero dependencies.** Nothing is downloaded at install or run time.
-- **Auditable in minutes.** Eight skills, seven commands, two small manifests. Read it all before installing - please do.
+- **Auditable in minutes.** Nine skills, eight commands, two small manifests. Read it all before installing - please do.
 
 ## What's inside
 
@@ -24,6 +24,7 @@ The workflow, end to end:
 | (while implementing) | `test-driven-development` | - |
 | (when it has a UI) | `designing-interfaces` | `/design` |
 | (when things break) | `systematic-debugging` | `/debug` |
+| (when a claim needs checking) | `validating-claims` | `/validate-claim` |
 | 5. Land it | `shipping` | `/ship` |
 
 `shaping-specs` is optional - it earns its keep on features big enough that "what exactly are we building" deserves its own written answer. Small changes can go straight from `/brainstorm` to `/plan`.
@@ -33,6 +34,12 @@ The workflow, end to end:
 font pairings, 22 technology stacks and more - that Claude searches with its own
 Grep tool. It is a zero-code port of [UI/UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)
 (MIT, © 2024 Next Level Builder); see `skills/designing-interfaces/NOTICE.md`.
+
+`validating-claims` checks one claim against one source - a file, a URL, or pasted
+text - and scores its correctness and completeness using *only* that source. A fresh
+sub-agent does the judging, so it never sees your conversation or project, and every
+verdict must quote the source verbatim; anything the source doesn't say scores as
+"not in source", however true it may be elsewhere.
 
 Design principles baked in: designs approved before code, plans in 2-15 minute tasks that each end green and committed, RED-GREEN-REFACTOR with the watch-it-fail rule, root cause before fixes, evidence before completion claims, and checkpoints so work is resumable across short solo-dev sessions.
 
@@ -116,8 +123,9 @@ This project follows the cozypowers workflow. Before any feature work, bug fix,
 or behavior change, check the cozypowers skills and use the one that fits:
 brainstorming before new code, writing-plans before multi-file work,
 test-driven-development for all logic, designing-interfaces for anything with
-a UI, systematic-debugging for any bug, shipping before declaring anything
-done. These are mandatory workflows, not suggestions.
+a UI, systematic-debugging for any bug, validating-claims to check a claim
+against a source, shipping before declaring anything done. These are mandatory
+workflows, not suggestions.
 ```
 
 Skills also trigger on their own descriptions, and the slash commands invoke them explicitly - the snippet just raises the hit rate at session start.
