@@ -48,6 +48,10 @@ Save plans to `docs/plans/YYYY-MM-DD-<topic>.md`. Use this template:
 
 Insert an explicit **CHECKPOINT** line after every 3-5 tasks: a natural pause to review the diff, reconsider, or stop for the day. Solo development happens in stolen hours; a plan must be resumable at any checkpoint by someone with zero short-term memory of the work.
 
+## Large or risky plans
+
+For plans where stopping early or partial completion is a real risk - many tasks, many requirements, or a developer who says "don't stop until it's really done" - pair the plan with a `GATES.md` ledger from the **unlazy** skill: one runnable gate per requirement, written now, checked as tasks complete.
+
 ## Rules of engagement
 
 - Present the plan for approval before executing it. Note anything you're unsure about rather than hiding it in confident prose.

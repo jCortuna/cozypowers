@@ -5,6 +5,12 @@ All notable changes to cozypowers are documented here.
 ## [Unreleased]
 
 ### Added
+- `unlazy` skill and `/unlazy` command — write a `GATES.md` ledger of runnable
+  checks before building, work each leaf in four passes (optionally split as a
+  `tree N` depth tree), and only report done when every gate has real evidence.
+  Clean-room, markdown-only rewrite of the community unlazy skill (MIT); its
+  Node scripts and Stop hook are replaced by the agent's own tools and the
+  `shipping` gate. See `skills/unlazy/NOTICE.md`.
 - `cozydesign` companion plugin (v1.0.0) in the same marketplace: 15 markdown-only design-engineering skills - `design-engineering`, `animate`, `web-design-engineer`, `landing-page-design`, `video-to-superprompt`, `awwwards-quality-sites`, the `better-*` review family, `interface-review`, and `tastemaker`. Clean-room recreations of community design skills; see `cozydesign/CREDITS.md`.
 - Marketplace description in `marketplace.json`.
 - `designing-interfaces` skill and `/design` command — UI/UX design intelligence
@@ -17,6 +23,8 @@ All notable changes to cozypowers are documented here.
   documented Grep procedure, preserving the plugin's zero-executable-code rule.
 
 ### Changed
+- `shipping` refuses to land work while a `GATES.md` ledger has an open gate.
+- `writing-plans` suggests pairing large or risky plans with an unlazy ledger.
 - `shipping` now runs the interface pre-delivery checklist when a change is
   player- or user-visible.
 - README's audit instructions updated: the plugin now contains CSV data files, so

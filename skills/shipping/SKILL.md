@@ -18,6 +18,10 @@ Run each of these and look at the actual output - do not assume:
   checklist from the **designing-interfaces** skill (`references/pro-rules.md` for
   app UI, `references/quick-reference.md` §1-3 for web). Contrast, touch targets,
   focus states and safe areas are shipping criteria, not polish.
+- **The ledger is closed**, if a `GATES.md` exists (from the **unlazy** skill):
+  every gate is `[x]` with real evidence pasted, or explicitly descoped by the
+  developer. Re-run any gate whose evidence predates the last code change. An
+  open box stops shipping, exactly like a red test.
 - **The plan is honest**: every task marked done actually happened; every "no test: <reason>" is still defensible.
 
 Anything red stops shipping. Fix it (via **systematic-debugging** if the cause isn't obvious) or explicitly descope it with the developer - never quietly ship around it.
