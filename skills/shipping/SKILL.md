@@ -14,6 +14,10 @@ Run each of these and look at the actual output - do not assume:
 - **Full test suite** passes. Not just the tests near the change - all of them.
 - **Lint / typecheck / build** pass with the project's real commands.
 - **Manual smoke test** of the user-visible behavior, exercised the way a player would hit it. For multiplayer features, that means more than one client.
+- **The interface holds up**, if the change is user-visible: run the pre-delivery
+  checklist from the **designing-interfaces** skill (`references/pro-rules.md` for
+  app UI, `references/quick-reference.md` §1-3 for web). Contrast, touch targets,
+  focus states and safe areas are shipping criteria, not polish.
 - **The plan is honest**: every task marked done actually happened; every "no test: <reason>" is still defensible.
 
 Anything red stops shipping. Fix it (via **systematic-debugging** if the cause isn't obvious) or explicitly descope it with the developer - never quietly ship around it.
