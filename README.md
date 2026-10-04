@@ -9,7 +9,7 @@ Third-party plugins can ship session hooks, shell scripts, and telemetry that ex
 - **Zero executable code.** No hooks, no scripts, no binaries. Every file is markdown, inert CSV data, or a small JSON manifest - nothing that can run.
 - **Zero network calls.** Nothing phones home, ever.
 - **Zero dependencies.** Nothing is downloaded at install or run time.
-- **Auditable in minutes.** Ten skills, nine commands, two small manifests. Read it all before installing - please do.
+- **Auditable in minutes.** Eleven skills, ten commands, two small manifests. Read it all before installing - please do.
 
 ## What's inside
 
@@ -22,6 +22,7 @@ The workflow, end to end:
 | 3. Break it into tasks | `writing-plans` | `/plan` |
 | 4. Do the work | `executing-plans` | `/execute` |
 | (while implementing) | `test-driven-development` | - |
+| (while implementing) | `ponytail` | `/ponytail` |
 | (when it has a UI) | `designing-interfaces` | `/design` |
 | (when things break) | `systematic-debugging` | `/debug` |
 | (when "done" must be proven) | `unlazy` | `/unlazy` |
@@ -47,6 +48,14 @@ text - and scores its correctness and completeness using *only* that source. A f
 sub-agent does the judging, so it never sees your conversation or project, and every
 verdict must quote the source verbatim; anything the source doesn't say scores as
 "not in source", however true it may be elsewhere.
+
+`ponytail` keeps the code itself small: before writing anything it reads the code
+being touched, then climbs a ladder - does it need to exist, does the codebase already
+do it, stdlib, native platform feature, installed dependency, one line - and writes new
+code only at the bottom. Validation, data-loss handling, security and accessibility are
+never cut, and deliberate shortcuts are marked `ponytail:` so `shipping` can list them.
+A markdown-only rewrite of the idea behind [ponytail](https://github.com/DietrichGebert/ponytail),
+minus its SessionStart hook; see `skills/ponytail/NOTICE.md`.
 
 Design principles baked in: designs approved before code, plans in 2-15 minute tasks that each end green and committed, RED-GREEN-REFACTOR with the watch-it-fail rule, root cause before fixes, evidence before completion claims, and checkpoints so work is resumable across short solo-dev sessions.
 
@@ -129,10 +138,11 @@ The original inspiration uses a session-start hook (executable code) to make the
 This project follows the cozypowers workflow. Before any feature work, bug fix,
 or behavior change, check the cozypowers skills and use the one that fits:
 brainstorming before new code, writing-plans before multi-file work,
-test-driven-development for all logic, designing-interfaces for anything with
-a UI, systematic-debugging for any bug, unlazy for long or multi-part work,
-validating-claims to check a claim against a source, shipping before
-declaring anything done. These are mandatory workflows, not suggestions.
+test-driven-development for all logic, ponytail before writing any code,
+designing-interfaces for anything with a UI, systematic-debugging for any bug,
+unlazy for long or multi-part work, validating-claims to check a claim against
+a source, shipping before declaring anything done. These are mandatory
+workflows, not suggestions.
 ```
 
 Skills also trigger on their own descriptions, and the slash commands invoke them explicitly - the snippet just raises the hit rate at session start.

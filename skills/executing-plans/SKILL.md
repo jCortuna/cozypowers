@@ -13,7 +13,7 @@ For each task, in order:
 
 1. **Read the task fully** before touching anything.
 2. **Test first** where the task has one: write the failing test, run it, watch it fail for the right reason (see **test-driven-development**).
-3. **Implement** the minimal change the task describes.
+3. **Implement** the minimal change the task describes, climbing the **ponytail** ladder first: read the code it touches, then reuse, stdlib, native, installed dependency, one line - and only then write new code.
 4. **Verify**: run the task's verification commands. All green, including previously passing tests.
 5. **Self-review the diff** before committing. Read it as a skeptical reviewer: Does it match the task spec? Is anything in the diff *not* required by the task? Debug prints, commented-out code, drive-by "improvements" - remove them.
 6. **Commit** with the task's message. One task, one commit.

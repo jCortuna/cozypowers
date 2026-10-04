@@ -32,6 +32,7 @@ Read the complete branch diff (`git diff main...HEAD`) top to bottom, as a skept
 
 - Leftovers: debug logging, commented-out code, TODOs that should be tasks, stray files.
 - Scope creep: changes that no task in the plan asked for.
+- Shortcuts: list every `ponytail:` comment the branch adds (`git diff main...HEAD | grep -n "ponytail:"`) and show them to the developer. Each must still be true; any that should be a follow-up task goes in the plan document.
 - Secrets and keys: nothing sensitive committed, ever.
 - Naming check: no internal-only terms, legacy names, or placeholder copy in anything player-visible.
 

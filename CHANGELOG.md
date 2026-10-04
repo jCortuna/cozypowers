@@ -5,6 +5,13 @@ All notable changes to cozypowers are documented here.
 ## [Unreleased]
 
 ### Added
+- `ponytail` skill and `/ponytail` command — write the least code that correctly
+  does the job: read the touched code, then climb a seven-rung ladder (needed? →
+  codebase → stdlib → native → installed dependency → one line → minimum), never
+  cutting validation, data-loss handling, security or accessibility. Lite / full /
+  ultra levels; deliberate shortcuts marked with `ponytail:` comments. Clean-room,
+  markdown-only rewrite of the idea behind DietrichGebert/ponytail, without its
+  SessionStart hook. See `skills/ponytail/NOTICE.md`.
 - `unlazy` skill and `/unlazy` command — write a `GATES.md` ledger of runnable
   checks before building, work each leaf in four passes (optionally split as a
   `tree N` depth tree), and only report done when every gate has real evidence.
@@ -28,6 +35,8 @@ All notable changes to cozypowers are documented here.
   documented Grep procedure, preserving the plugin's zero-executable-code rule.
 
 ### Changed
+- `executing-plans` climbs the ponytail ladder before each implementation step.
+- `shipping` lists every `ponytail:` shortcut comment on the branch before landing.
 - `shipping` refuses to land work while a `GATES.md` ledger has an open gate.
 - `writing-plans` suggests pairing large or risky plans with an unlazy ledger.
 - `shipping` now runs the interface pre-delivery checklist when a change is
