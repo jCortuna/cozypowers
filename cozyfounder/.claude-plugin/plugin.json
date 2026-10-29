@@ -1,0 +1,8 @@
+{
+  "name": "cozyfounder",
+  "description": "Eleven skills that test a business before you launch it: a board of three framework lenses, a competitor scout, a simulated buyer panel, pricing, the offer, a CFO, marketing, brand, operations, a launch plan and a business plan with a computed verdict. Clean-room recreation of the founder-skill pack. No hooks, no scripts, no telemetry - pure markdown.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Cozybara"
+  }
+}
