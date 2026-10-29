@@ -1,6 +1,6 @@
 {
   "name": "cozypowers",
-  "description": "Zero-code Claude Code plugins by Cozybara: cozypowers (lean solo-dev methodology) and cozydesign (design-engineering skills).",
+  "description": "Zero-code Claude Code plugins by Cozybara: cozypowers (lean solo-dev methodology), cozydesign (design-engineering skills) and cozyfounder (test a business before you launch it).",
   "owner": {
     "name": "Cozybara"
   },
@@ -14,6 +14,11 @@
       "name": "cozydesign",
       "source": "./cozydesign",
       "description": "Design-engineering skills so generated interfaces stop looking generated: motion, layout, typography, color, accessibility, landing pages, taste memory, and evidence-based design reviews. Clean-room recreations of popular community design skills. No hooks, no scripts, no telemetry."
+    },
+    {
+      "name": "cozyfounder",
+      "source": "./cozyfounder",
+      "description": "Eleven skills that test a business before you launch it: a board of three framework lenses, a competitor scout, a simulated buyer panel, pricing, the offer, a CFO, marketing, brand, operations, a launch plan and a business plan with a computed verdict. Clean-room recreation of the founder-skill pack. No hooks, no scripts, no telemetry."
     }
   ]
 }

@@ -63,6 +63,10 @@ Design principles baked in: designs approved before code, plans in 2-15 minute t
 
 This repo also ships **[cozydesign](cozydesign/README.md)**, a separate, optional plugin in the same marketplace with 15 design-engineering skills (motion, layout, typography, color, accessibility, landing pages, taste memory, and interface reviews). It follows the same zero-code rules, and installing it is independent of cozypowers: `/plugin install cozydesign@cozypowers`.
 
+### Companion plugin: cozyfounder
+
+**[cozyfounder](cozyfounder/README.md)** is a second optional plugin: eleven skills that test a business before you launch it - a board of three framework lenses, a competitor scout, a simulated buyer panel, pricing, the offer, a CFO, marketing, brand, operations, a launch plan and a business plan with a verdict decided by fixed checks. A markdown-only, hardened recreation of [The Founder skill](https://github.com/Jakeschincariol/founder-skill) (MIT); its Python tools became written procedures the agent follows by hand. It also installs as an Antigravity plugin. `/plugin install cozyfounder@cozypowers`.
+
 Deliberately **not** included from the original inspiration: subagent-driven development with parallel agent dispatch and two-stage review, git-worktree parallelism, and the meta skill-authoring system. Those earn their keep on teams running long autonomous sessions; for one developer they are mostly ceremony. Add them later if you feel the absence.
 
 ## Installation
@@ -158,7 +162,10 @@ find cozypowers -type f ! -name '*.md' ! -name '*.csv' ! -name '*.json' -not -pa
 # 2. Everything else is markdown, CSV data, or small JSON manifests.
 find cozypowers -type f -name '*.json'   # expect: plugin.json, marketplace.json,
                                          # cozydesign/.claude-plugin/plugin.json,
-                                         # and 2 inert data files under skills/designing-interfaces/data/
+                                         # cozyfounder/.claude-plugin/plugin.json,
+                                         # cozyfounder/plugin.json (Antigravity),
+                                         # 2 inert data files under skills/designing-interfaces/data/
+                                         # and 2 inert example files under cozyfounder/skills/
 ```
 
 A note on URLs: the `designing-interfaces` corpus contains roughly 700 documentation

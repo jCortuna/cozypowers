@@ -5,6 +5,16 @@ All notable changes to cozypowers are documented here.
 ## [Unreleased]
 
 ### Added
+- `cozyfounder` companion plugin (v1.0.0) in the same marketplace: 11
+  markdown-only skills that test a business before launch - `cozy-founder-board`,
+  `-competitors`, `-consumer`, `-pricing`, `-offer`, `-cfo`, `-marketing`,
+  `-brand`, `-ops`, `-launch`, `-plan`. Clean-room recreation of
+  Jakeschincariol/founder-skill (MIT). Its four Python tools are replaced by
+  written procedures (`formulas.md` with a worked example, `van-westendorp.md`,
+  `dealing.md`, `brief-template.md`, verdict rules). Hardened: buyer and board
+  sub-agents get no tools, the pitch is sanitised and fenced as data, fetched
+  web pages are never treated as instructions, the panel defaults to 20 buyers.
+  Also packaged as an Antigravity plugin. See `cozyfounder/CREDITS.md`.
 - `ponytail` skill and `/ponytail` command — write the least code that correctly
   does the job: read the touched code, then climb a seven-rung ladder (needed? →
   codebase → stdlib → native → installed dependency → one line → minimum), never
