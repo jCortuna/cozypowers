@@ -1,6 +1,6 @@
 ---
 name: cozy-founder-plan
-description: Compile everything the other cozyfounder skills wrote into one business plan, with a verdict at the top decided by fixed numeric checks rather than opinion - Profitable, Not yet (naming the failing checks) or Incomplete - plus a half-page summary and a one-pager for a partner, lender or investor. Use when asked to write the business plan, put it all together, whether it is profitable, or at the end of the cozyfounder pack.
+description: "Compile the founder pack into a business plan, summary and one-pager with a verdict from fixed checks: Profitable, Not yet or Incomplete. Use to write the plan or ask if it's profitable."
 ---
 
 # cozy-founder-plan

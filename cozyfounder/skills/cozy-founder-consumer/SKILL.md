@@ -1,6 +1,6 @@
 ---
 name: cozy-founder-consumer
-description: Run a simulated consumer panel. Build the target customer, deal a panel of buyer personas (20 by default, 100 on request), show every buyer the same pitch through isolated sub-agents, then tally who buys, who passes and why, what would flip a no, and four price answers per buyer for pricing. Use when asked whether people would buy something, to simulate buyers, run a consumer panel, test on customers, or validate demand.
+description: "Simulated consumer panel: 20 isolated buyer sub-agents (100 on request) react to the pitch; tally who buys, why not and price answers. Use to validate demand or test an offer."
 ---
 
 # cozy-founder-consumer

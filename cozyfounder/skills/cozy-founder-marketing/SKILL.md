@@ -1,6 +1,6 @@
 ---
 name: cozy-founder-marketing
-description: Turn the buyer panel and competitor map into positioning, the channels the target customer actually uses, a dated 30-day launch campaign, ten hooks that each answer a real objection, a budget split, the most the business can pay to win a customer and the numbers to watch. Use when asked how to market something, for a marketing plan or launch campaign, how to get customers, where to advertise, to write ads, or for positioning.
+description: "Positioning, channels, a dated 30-day launch campaign, ten objection-answering hooks, budget and the most a customer may cost. Use for a marketing plan, ads or how to get customers."
 ---
 
 # cozy-founder-marketing

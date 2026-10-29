@@ -1,6 +1,6 @@
 ---
 name: cozy-founder-ops
-description: Work out how a business actually runs on day one - the daily cycle, real suppliers with prices and lead times, a staffing rota, one-page routines (SOPs), the smallest tool stack, the licences, permits and insurance to confirm, and a risk register - feeding real costs back to the CFO numbers. Use when asked how to run a business, about operations, suppliers, staffing, SOPs, permits, or what is needed to open.
+description: "How the business runs day one: daily cycle, real suppliers, rota, SOPs, tools, permits to confirm and a risk register, feeding costs to the CFO. Use for operations, suppliers or permits."
 ---
 
 # cozy-founder-ops
