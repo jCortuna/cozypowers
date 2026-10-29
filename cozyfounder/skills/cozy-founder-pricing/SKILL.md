@@ -1,6 +1,6 @@
 ---
 name: cozy-founder-pricing
-description: Set a price from evidence. Turn buyers' four price answers into a Van Westendorp acceptable price range, compare it with what competitors actually charge and with the margin the business needs, then recommend a price, a good-better-best ladder, an honest opening offer and two prices to test with real buyers. Use when asked how much to charge, whether a price is too high, for a pricing strategy, or after the consumer panel.
+description: "Set a price from evidence: Van Westendorp range from buyer answers, competitor prices and the margin, then a price, ladder, opening offer and tests. Use for how much to charge."
 ---
 
 # cozy-founder-pricing

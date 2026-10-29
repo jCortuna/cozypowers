@@ -1,6 +1,6 @@
 ---
 name: cozy-founder-offer
-description: Build an offer that is easy to say yes to. List every obstacle the buyer faces, turn each into part of the offer, keep what is valuable and cheap to deliver, add honest bonuses, an affordable guarantee, true urgency and a clear name, score it on perceived value and re-test it on the same simulated buyer panel. Use when asked to improve an offer, why people won't buy, what to include, bonuses or a guarantee, or after the panel shows people passing.
+description: "Build an easy-yes offer: obstacles turned into bonuses, an affordable guarantee, true urgency and a name, re-tested on the same buyer panel. Use when people won't buy or to improve an offer."
 ---
 
 # cozy-founder-offer

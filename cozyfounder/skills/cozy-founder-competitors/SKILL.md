@@ -1,6 +1,6 @@
 ---
 name: cozy-founder-competitors
-description: Map the direct competitors, indirect competitors and substitutes for a business idea from public sources, recording each one's prices, positioning and recurring customer complaints with a link for every fact, then find the gap the new business could own. Use when asked who the competitors are, whether a market is crowded, for a competitor analysis, or to find the gap.
+description: "Map direct, indirect and substitute competitors from public sources, with prices, positioning and complaints, every fact linked, and find the gap. Use for competitor analysis."
 ---
 
 # cozy-founder-competitors

@@ -1,6 +1,6 @@
 ---
 name: cozy-founder-launch
-description: Build a dated launch plan that starts with a cheap real-world test (waitlist, pre-sale, pop-up or paid pilots at the real price) to confirm what the simulated panel said, then a countdown with owners and deadlines, a launch-day run sheet and a first-30-days review. Use when asked how to launch, for a launch plan or checklist, when the business can open, to go live, or plan a soft open.
+description: "Dated launch plan starting with a cheap real-world test, then countdown, launch-day run sheet and 30-day review. Use for how or when to launch, a launch checklist or soft open."
 ---
 
 # cozy-founder-launch

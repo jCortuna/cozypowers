@@ -1,6 +1,6 @@
 ---
 name: cozy-founder-brand
-description: Name and brand a new business - ten name candidates with the trademark, domain and handle checks to run, a one-line promise, taglines, a voice with do's and don'ts, and a brief for colours, type, logo and the first five customer touchpoints, all matched to the chosen positioning. Use when asked to name a business, brand it, for a logo or brand identity, a tagline, a brand voice, or what it should look like.
+description: "Name and brand a business: name candidates with trademark, domain and handle checks, promise, taglines, voice and a look brief. Use for naming, logo, tagline or brand identity."
 ---
 
 # cozy-founder-brand

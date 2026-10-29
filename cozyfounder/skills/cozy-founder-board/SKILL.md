@@ -1,6 +1,6 @@
 ---
 name: cozy-founder-board
-description: Put a business idea in front of a three-member board of directors, each reviewing it through one published framework (an Offers lens, a Monopoly lens and a Product lens), scoring it, naming what would kill it and voting fund, fund-if or pass. Use when asked to test, pressure-test or judge a business idea, "would this work", "what would a board say", or to start the cozyfounder pack on a new idea.
+description: "Board of directors for a business idea: three framework lenses (Offers, Monopoly, Product) score it, name what would kill it and vote. Use to test or pressure-test an idea."
 ---
 
 # cozy-founder-board

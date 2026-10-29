@@ -1,6 +1,6 @@
 ---
 name: cozy-founder-cfo
-description: Work out the unit economics of a business before money is spent - contribution per sale, the real profit margin at planned volume, break-even units per day, year 1 month by month, cash needed before it pays for itself, payback month and three what-ifs - with every number traced to an input and the working shown. Use when asked for profit margins, unit economics, break-even, whether something is profitable, how much is needed to start, or to run the CFO.
+description: "Unit economics by hand with working shown: contribution, margin, break-even, year 1 by month, cash needed, payback, what-ifs. Use for profit margins, break-even or startup cash."
 ---
 
 # cozy-founder-cfo
